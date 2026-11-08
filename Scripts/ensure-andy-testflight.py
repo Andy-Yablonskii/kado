@@ -49,8 +49,14 @@ if group is None:
         "relationships": {"app": {"data": {"type": "apps", "id": app_id}}}}})["data"]
     print(f"Created internal TestFlight group {GROUP_NAME}.")
 testers = call("GET", f"/v1/betaGroups/{group['id']}/betaTesters")["data"]
-if not any(t["id"] == TESTER_ID for t in testers):
-    call("POST", f"/v1/betaGroups/{group['id']}/relationships/betaTesters",
-         {"data": [{"type": "betaTesters", "id": TESTER_ID}]})
+andy = call("GET", f"/v1/betaTesters/{TESTER_ID}")["data"]["attributes"]
+if not any(t["attributes"]["email"] == andy["email"] for t in testers):
+    # Linking the existing tester id to a new app's internal group returns 409;
+    # creating the tester by email inside the group works.
+    call("POST", "/v1/betaTesters", {"data": {
+        "type": "betaTesters",
+        "attributes": {"email": andy["email"], "firstName": andy.get("firstName") or "Andy",
+                       "lastName": andy.get("lastName") or ""},
+        "relationships": {"betaGroups": {"data": [{"type": "betaGroups", "id": group["id"]}]}}}})
     print("Added Andy to the group.")
 print(f"App {app_id} ready; group {GROUP_NAME} gets every build.")
