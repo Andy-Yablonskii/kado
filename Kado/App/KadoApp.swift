@@ -198,6 +198,11 @@ struct KadoApp: App {
         .environment(\.dayBoundary, boundary)
         .environment(\.habitTheme, renderedHabitTheme)
         .onChange(of: scenePhase) { _, newPhase in
+            // The automatic backup, on the way out. Never from the dev
+            // sandbox: its demo data would overwrite the real backup.
+            if newPhase == .background && !isDevMode {
+                AutoExportRunner.runIfEnabled(using: container.mainContext)
+            }
             // Reconciles the pending set every time the app comes
             // to the foreground — handles clock-drift, day-rollover,
             // and cases where a background reminder fired while

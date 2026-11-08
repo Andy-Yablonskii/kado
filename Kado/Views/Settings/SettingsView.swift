@@ -19,6 +19,7 @@ struct SettingsView: View {
                 NotificationsSection()
                 ArchivedSection()
                 BackupSection()
+                AutoExportSection()
                 SupportSection()
                 TipJarSection()
                 DevModeSection()

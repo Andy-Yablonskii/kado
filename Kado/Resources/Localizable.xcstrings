@@ -1065,6 +1065,23 @@
         }
       }
     },
+    "Automatic backup" : {
+      "comment" : "Settings section header for the automatic backup.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatic backup"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sauvegarde automatique"
+          }
+        }
+      }
+    },
     "Autumn" : {
       "comment" : "Habit colour theme name (Supporter pack): autumn colours, oranges and greens only.",
       "localizations" : {
@@ -1113,6 +1130,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "À éviter"
+          }
+        }
+      }
+    },
+    "Back up automatically" : {
+      "comment" : "Settings toggle: write a JSON backup automatically when the app goes to the background.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back up automatically"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sauvegarder automatiquement"
+          }
+        }
+      }
+    },
+    "Back up now" : {
+      "comment" : "Settings, automatic backup: button that writes the backup immediately.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back up now"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sauvegarder maintenant"
           }
         }
       }
@@ -1198,6 +1249,23 @@
         }
       }
     },
+    "Choose a folder for automatic backups." : {
+      "comment" : "Error shown when an automatic backup runs before a folder was picked.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose a folder for automatic backups."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisis un dossier pour les sauvegardes automatiques."
+          }
+        }
+      }
+    },
     "Choose Habits" : {
       "comment" : "Title of the home widgets' configuration intent, shown as the widget-edit sheet's heading.",
       "extractionState" : "stale",
@@ -1230,6 +1298,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Choisis les habitudes affichées par ce widget. Laisse vide pour toutes les afficher."
+          }
+        }
+      }
+    },
+    "Choose…" : {
+      "comment" : "Settings, automatic backup: folder row value before a folder is picked.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisir…"
           }
         }
       }
@@ -1990,6 +2075,23 @@
         }
       }
     },
+    "Folder" : {
+      "comment" : "Settings, automatic backup: label of the row showing the chosen backup folder.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Folder"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dossier"
+          }
+        }
+      }
+    },
     "Frequency" : {
       "comment" : "Section header in the new-habit form grouping frequency-related controls.",
       "localizations" : {
@@ -2627,6 +2729,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kadō, inversé"
+          }
+        }
+      }
+    },
+    "Last automatic backup failed: %@" : {
+      "comment" : "Settings, automatic backup: footer line when the last run failed. Argument: the error.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last automatic backup failed: %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La dernière sauvegarde automatique a échoué : %@"
+          }
+        }
+      }
+    },
+    "Last automatic backup: %@" : {
+      "comment" : "Settings, automatic backup: footer line with the date of the last successful run.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last automatic backup: %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dernière sauvegarde automatique : %@"
           }
         }
       }
@@ -5332,6 +5468,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La semaine commence le"
+          }
+        }
+      }
+    },
+    "When Kadō goes to the background, it saves Kado-latest.json and one dated copy a day (the last 30 are kept) into this folder, in the same format as Export Data › JSON." : {
+      "comment" : "Settings, automatic backup: footer explaining what gets written and when.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "When Kadō goes to the background, it saves Kado-latest.json and one dated copy a day (the last 30 are kept) into this folder, in the same format as Export Data › JSON."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quand Kadō passe en arrière-plan, il enregistre Kado-latest.json et une copie datée par jour (les 30 dernières sont gardées) dans ce dossier, au même format que Exporter les données › JSON."
           }
         }
       }
