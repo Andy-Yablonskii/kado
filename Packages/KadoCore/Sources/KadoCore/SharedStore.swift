@@ -17,7 +17,7 @@ import SwiftData
 nonisolated public enum SharedStore {
     /// App Group identifier. Must match the entitlement string on
     /// both the main app and the widget extension targets.
-    public static let appGroupID = "group.dev.scastiel.kado"
+    public static let appGroupID = "group.com.andyyablonskii.kado"
 
     /// App Group container root if the entitlement is active.
     public static func appGroupContainerURL() -> URL? {
@@ -102,12 +102,14 @@ nonisolated public enum SharedStore {
             configuration = ModelConfiguration(
                 schema: schema,
                 url: target,
-                cloudKitDatabase: .private(CloudContainerID.kado)
+                // Personal build: no iCloud container, so no sync. The
+                // automatic backup (Settings) is the off-device copy.
+                cloudKitDatabase: .none
             )
         } else {
             configuration = ModelConfiguration(
                 schema: schema,
-                cloudKitDatabase: .private(CloudContainerID.kado)
+                cloudKitDatabase: .none
             )
         }
         return try ModelContainer(

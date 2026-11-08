@@ -101,7 +101,8 @@ struct KadoApp: App {
             return MockCloudAccountStatusObserver(status: .available, syncHealth: .healthy)
         }
         #endif
-        return DefaultCloudAccountStatusObserver()
+        // Personal build: no iCloud container (see `SharedStore`).
+        return LocalOnlyCloudAccountStatus()
     }
 
     /// StoreKit's store — or, on a UI test run that asked to own the

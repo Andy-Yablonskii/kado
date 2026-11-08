@@ -12,7 +12,7 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             Form {
-                SyncStatusSection()
+                // Personal build: no iCloud sync to show (see `SharedStore`).
                 DayStartSection()
                 WeekStartSection()
                 AppearanceSection()

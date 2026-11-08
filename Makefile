@@ -49,7 +49,7 @@ PARALLEL  := -parallel-testing-enabled YES -maximum-parallel-testing-workers $(W
 
 SCHEME      := Kado
 PROJECT     := Kado.xcodeproj
-BUNDLE_ID   := dev.scastiel.kado
+BUNDLE_ID   := com.andyyablonskii.kado
 DERIVED     := build
 DESTINATION := platform=iOS Simulator,name=$(SIM_NAME)
 
