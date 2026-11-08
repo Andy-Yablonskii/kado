@@ -116,6 +116,9 @@ struct KadoApp: App {
         return DefaultSupporterPackStore()
     }
 
+    @AppStorage(ColorSchemePreference.key)
+    private var colorSchemePreference: ColorSchemePreference = .system
+
     init() {
         #if DEBUG
         // Before anything opens a `ModelContainer`: a run that asked for
@@ -149,6 +152,7 @@ struct KadoApp: App {
 
         return WindowGroup {
             rootView
+                .onAppear { colorSchemePreference.apply() }
                 .task { await cloudAccountStatus.refresh() }
                 // A refund granted while the app was closed arrives as a
                 // missing entitlement, not an update — this is where the

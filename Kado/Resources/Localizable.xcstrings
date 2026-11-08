@@ -19,6 +19,39 @@
         }
       }
     },
+    "Dark" : {
+      "comment" : "Appearance option that keeps the app dark",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sombre"
+          }
+        }
+      }
+    },
+    "Light" : {
+      "comment" : "Appearance option that keeps the app light",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clair"
+          }
+        }
+      }
+    },
+    "Light & dark" : {
+      "comment" : "Header of the light/dark appearance section in Settings → Appearance",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clair et sombre"
+          }
+        }
+      }
+    },
     "Make Kadō yours: Settings › Appearance has colour themes for your habits and, with the Supporter pack, alternate app icons." : {
       "comment" : "Card at the bottom of Today announcing the Appearance screen, shown once to everyone.",
       "localizations" : {
@@ -36,6 +69,17 @@
         }
       }
     },
+    "Mode" : {
+      "comment" : "Pick light, dark, or the iPhone's own appearance (Settings → Appearance)",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode"
+          }
+        }
+      }
+    },
     "Open Appearance" : {
       "comment" : "Button on the Today announcement card that opens Settings › Appearance.",
       "localizations" : {
@@ -49,6 +93,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ouvrir Apparence"
+          }
+        }
+      }
+    },
+    "System" : {
+      "comment" : "Appearance option that follows the iPhone's light/dark setting",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Système"
+          }
+        }
+      }
+    },
+    "System follows your iPhone's setting." : {
+      "comment" : "Footer under the light/dark picker in Settings → Appearance",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Système suit le réglage de ton iPhone."
           }
         }
       }

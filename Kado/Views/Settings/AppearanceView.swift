@@ -13,6 +13,7 @@ struct AppearanceView: View {
 
     var body: some View {
         Form {
+            ColorSchemeSection()
             HabitThemeSection(showsSupporterPack: $showsSupporterPack)
             AppIconSection(showsSupporterPack: $showsSupporterPack)
         }
